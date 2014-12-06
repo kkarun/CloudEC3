@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+
+	<servlet>
+		<servlet-name>BaseBucketConsumerServlet</servlet-name>
+		<servlet-class>edu.bits.cloud.ec3.servlets.BaseBucketConsumerServlet</servlet-class>
+
+		<init-param>
+			<param-name>bucketName</param-name>
+			<param-value>eciiiassignment</param-value>
+		</init-param>
+		
+		<init-param>
+			<param-name>region</param-name>
+			<!-- 
+			US East (N. Virginia)		us-east-1		cloudsearch.us-east-1.amazonaws.com			HTTPS
+			US West (N. California)		us-west-1		cloudsearch.us-west-1.amazonaws.com			HTTPS
+			US West (Oregon)			us-west-2		cloudsearch.us-west-2.amazonaws.com			HTTPS
+			EU (Ireland)				eu-west-1		cloudsearch.eu-west-1.amazonaws.com			HTTPS
+			EU (Frankfurt) region		eu-central-1	cloudsearch.eu-central-1.amazonaws.com		HTTPS
+			Asia Pacific (Singapore)	ap-southeast-1	cloudsearch.ap-southeast-1.amazonaws.com	HTTPS
+			Asia Pacific (Sydney)		ap-southeast-2	cloudsearch.ap-southeast-2.amazonaws.com	HTTPS
+			Asia Pacific (Tokyo)		ap-northeast-1	cloudsearch.ap-northeast-1.amazonaws.com	HTTPS
+			South America (Sao Paulo)	sa-east-1		cloudsearch.sa-east-1.amazonaws.com			HTTPS
+			 -->
+			<param-value>us-east-1</param-value>
+		</init-param>		
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>BaseBucketConsumerServlet</servlet-name>
+		<url-pattern>/BaseBucketConsumerServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
