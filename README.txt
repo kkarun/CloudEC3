@@ -2,7 +2,6 @@ Cloud Computing EC3 Assignment
 ==============================
 Assignment Description:
 ======================
-
 You will work closely with Group-5.
 
 Create an AWS Beanstalk application say BucketConsumer. In an index.html file you will
@@ -10,7 +9,6 @@ have a portion of the page that constantly polls the Bucket every 10 seconds for
 
 Assignment Explained:
 =====================
-
 * Implemented with JSP, AJAX refreshing and Servlets
 * Bucket name used is eciiiassignment from "US East (N. Virginia)" region
 * MVC kind of pattern is used where 
@@ -22,7 +20,6 @@ Assignment Explained:
 
 Team Members:
 =============
-
 * Aishwarya [2013HA92056]
 * Anbarasi [2013HA92080]
 * Arun Kumar K [2013HA92058]
